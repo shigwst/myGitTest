@@ -1,0 +1,33 @@
+﻿/console floatingCombatTextCombatDamage 1 伤害数字
+/console floatingCombatTextCombatHealing 1 治疗数字
+/console WorldTextScale 2   
+/console UnitNamePlayerPVPTitle 0   隐藏头衔
+/console UnitNamePlayerGuild 0       隐藏公会
+/console SpellQueueWindow X          技能延迟
+
+狂徒必备手枪宏（目标死后手枪自动切目标  代替手枪键位）
+#showtooltip 
+/startattack
+/施放 手枪射击
+
+狂徒必备眉心宏（目标死后眉心自动切目标  代替眉心键位）
+#showtooltip 
+/startattack
+/施放 正中眉心
+
+起手爆发宏
+#showtooltip 冲动
+/cast 冲动
+/use 14
+/use 
+/cast 血性狂怒(种族特长)
+/施放 狂暴(种族特长)
+/castsequence reset=1 潜行,偷袭
+
+焦点打断宏
+#showtooltip 脚踢
+/stopcasting 
+/Cast [target=focus,exists] 脚踢;脚踢
+
+/cancelaura 保护祝福 
+/cast 恶魔尖刺
